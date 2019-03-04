@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>City Citation Map</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/sexy.css">
+</head>
+
+<body>
+<nav class="navbar transparent navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<img class = "header-img" src="images/map-pin-red.svg" alt="marker" style="width:70px;height:55px;">
+			<span style = "color: white">Commute S(AI)fe</span>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="active">
+				<a href="https://data.montgomerycountymd.gov/Public-Safety/Traffic-Violations/4mse-ku6q/" target="_blank">Open Source Data</a>
+			</li>
+		</ul>
+	</div>	
+</nav>
+
+
+<div id = "container">
+	<div class="page-header">
+		<div class="container">
+			<div class="header-row">
+				<div class="col-xs-8">
+					<h1><b>A Map of Speeding Violations in the Washington D.C. Area</b><img src="images/capitol.png" alt = "capitol" id = "capitol-img"/></h1>
+					<h3><em>Monitor your fleet <img src = "images/car.png" alt="car" style="width:50px;height:40px;"> Ensure safety on the road.</em></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- GoogleMaps API will search for id "map" --> 
+	<div id="map"></div>
+	<div id = "below-map-container"></div>
+	<h3 id ="notification"></h3>
+	<div id="user-form">
+		<div class="row">
+		<!-- Note that form submit default action is disabled -->
+			<form role="form" action = "#" id = "queryparameters">
+				<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+					<label>Start Date</label>
+					<input type="date" placeholder="01/01/2012" min="01/01/2012" max="01/01/2017" class = "boxStyling" id="firstDate">
+				</div>
+				<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+					<label>End Date</label>
+					<input type="date" placeholder="01/01/2017" min="01/01/2012" max="01/01/2017" class = "boxStyling" id="secondDate">
+				</div>
+				<button class="btn-primary" id="submitForm">SUBMIT</button>
+			</form>
+		</div>
+	</div>
+</div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKY2xXXJx1cqQN69gn7yzzHTGy68t5ysg&libraries=visualization&callback=initMap"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/cityapp.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+</body>
+</html>

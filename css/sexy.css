@@ -1,0 +1,130 @@
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.1);
+}
+
+img {
+    padding: 5px;
+    width: 75px;
+    height: 50px;
+}
+
+#container {
+    margin: 4%;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.col {
+    display: inline;
+}
+.col-xs-8 {
+    /*border: 1px solid white;*/
+}
+
+.page-header {
+    color: black;
+}
+#capitol-img {
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+#risk-report {
+    width: 225px;
+    height: 150px;
+    background-color: #eef5db;
+    opacity: 0.77;
+    float: right;
+    color: white;
+    border-radius: 5px;
+    margin-top: 3%;
+    font-family: sans-serrif;
+}
+
+#report-header {
+    padding: 4%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+#report-content {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin-top: 6%;
+}
+
+
+#map {
+    height: 500px;
+    width: 100%;
+    border: 3px solid white;
+}
+
+
+#notification {
+    margin-top: 2%;
+    text-align: center;
+    padding: 1%;
+    color: #f5f5dc;
+    font-size: 20px;
+}
+
+#user-form {
+    border-radius: 25px;
+    background: rgba(0,0,0,0.1);
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.form-group {
+    width: 40%;
+}
+
+label {
+    color: white;
+}
+
+.boxStyling {
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 110%;
+    box-shadow: 3px 3px 2px #092147;
+}
+
+
+.btn-primary {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border-radius: 3px;
+    display: inline-block;
+	
+}
+
+#submitForm{
+	margin-left:45%;
+}
+
+#queryparameters{
+    display:inline-block;
+}
+
+body {
+    background-image: url("../images/blurred-background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+#footer {
+    text-align: center;
+}
